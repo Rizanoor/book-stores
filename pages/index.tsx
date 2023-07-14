@@ -2,6 +2,9 @@ import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import Navbar from '@/components/organisms/Navbar'
 import Header from '@/components/organisms/Header'
+import Pricing from '@/components/organisms/Pricing'
+import Footer from '@/components/organisms/Footer'
+import BookCategory from '@/components/organisms/BookCategory'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -11,84 +14,7 @@ export default function Home() {
     
       <Navbar />
       <Header/>
-
-      <div id="features" className="cards-1">
-        <h2 className="mb-5">Book Category</h2>
-        <div className="container px-4 sm:px-8 xl:px-4">
-          <div className="card">
-            <div className="card-image">
-              <img src="images/logo.png" alt="alternative" />
-            </div>
-            <div className="card-body">
-              <h5 className="card-title">Comic</h5>
-              <p className="mb-4">
-                You sales force can use the app on any smartphone platform without
-                compatibility issues
-              </p>
-            </div>
-          </div>
-          <div className="card">
-            <div className="card-image">
-              <img src="images/logo.png" alt="alternative" />
-            </div>
-            <div className="card-body">
-              <h5 className="card-title">Comic</h5>
-              <p className="mb-4">
-                You sales force can use the app on any smartphone platform without
-                compatibility issues
-              </p>
-            </div>
-          </div>
-          <div className="card">
-            <div className="card-image">
-              <img src="images/logo.png" alt="alternative" />
-            </div>
-            <div className="card-body">
-              <h5 className="card-title">Comic</h5>
-              <p className="mb-4">
-                You sales force can use the app on any smartphone platform without
-                compatibility issues
-              </p>
-            </div>
-          </div>
-          <div className="card">
-            <div className="card-image">
-              <img src="images/logo.png" alt="alternative" />
-            </div>
-            <div className="card-body">
-              <h5 className="card-title">Comic</h5>
-              <p className="mb-4">
-                You sales force can use the app on any smartphone platform without
-                compatibility issues
-              </p>
-            </div>
-          </div>
-          <div className="card">
-            <div className="card-image">
-              <img src="images/logo.png" alt="alternative" />
-            </div>
-            <div className="card-body">
-              <h5 className="card-title">Comic</h5>
-              <p className="mb-4">
-                You sales force can use the app on any smartphone platform without
-                compatibility issues
-              </p>
-            </div>
-          </div>
-          <div className="card">
-            <div className="card-image">
-              <img src="images/logo.png" alt="alternative" />
-            </div>
-            <div className="card-body">
-              <h5 className="card-title">Comic</h5>
-              <p className="mb-4">
-                You sales force can use the app on any smartphone platform without
-                compatibility issues
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
+      <BookCategory/>
 
       <div className="pt-4 pb-24 slider-1 bg-gray">
         <div className="container px-4 sm:px-8">
@@ -265,165 +191,8 @@ export default function Home() {
         </div>
       </div>
 
-      <div id="pricing" className="cards-2">
-        <div className="absolute bottom-0 w-full h-40 bg-white"></div>
-        <div className="container px-4 pb-px sm:px-8">
-          <h2 className="mb-2.5 text-white lg:max-w-xl lg:mx-auto">
-            Pricing subscribe options
-          </h2>
-          <p className="mb-16 text-white lg:max-w-3xl lg:mx-auto">
-            Our pricing plans are setup in such a way that any user can start
-            enjoying Pavo without worrying so much about costs. They are flexible
-            and work for any type of industry
-          </p>
-
-          <div className="card">
-            <div className="card-body">
-              <div className="card-title">STANDARD</div>
-              <div className="price">
-                <span className="currency">Rp</span><span className="value">2.000</span>
-              </div>
-              <div className="frequency">monthly</div>
-              <p>
-                This basic package covers the marketing needs of small startups
-              </p>
-              <ul className="space-y-2 text-left list mb-7">
-                <li className="flex">
-                  <i className="fas fa-chevron-right"></i>
-                  <div>List building and relations</div>
-                </li>
-                <li className="flex">
-                  <i className="fas fa-chevron-right"></i>
-                  <div>Seamless platform integration</div>
-                </li>
-                <li className="flex">
-                  <i className="fas fa-chevron-right"></i>
-                  <div>Great performance on devices</div>
-                </li>
-                <li className="flex">
-                  <i className="fas fa-chevron-right"></i>
-                  <div>Community support and videos</div>
-                </li>
-              </ul>
-              <div className="button-wrapper">
-                <a className="btn-solid-reg page-scroll" href="#download">Subsribe</a>
-              </div>
-            </div>
-          </div>
-          <div className="card">
-            <div className="card-body">
-              <div className="card-title">STANDARD</div>
-              <div className="price">
-                <span className="currency">Rp</span><span className="value">2.000</span>
-              </div>
-              <div className="frequency">monthly</div>
-              <p>
-                This basic package covers the marketing needs of small startups
-              </p>
-              <ul className="space-y-2 text-left list mb-7">
-                <li className="flex">
-                  <i className="fas fa-chevron-right"></i>
-                  <div>List building and relations</div>
-                </li>
-                <li className="flex">
-                  <i className="fas fa-chevron-right"></i>
-                  <div>Seamless platform integration</div>
-                </li>
-                <li className="flex">
-                  <i className="fas fa-chevron-right"></i>
-                  <div>Great performance on devices</div>
-                </li>
-                <li className="flex">
-                  <i className="fas fa-chevron-right"></i>
-                  <div>Community support and videos</div>
-                </li>
-              </ul>
-              <div className="button-wrapper">
-                <a className="btn-solid-reg page-scroll" href="#download">Subsribe</a>
-              </div>
-            </div>
-          </div>
-          <div className="card">
-            <div className="card-body">
-              <div className="card-title">STANDARD</div>
-              <div className="price">
-                <span className="currency">Rp</span><span className="value">2.000</span>
-              </div>
-              <div className="frequency">monthly</div>
-              <p>
-                This basic package covers the marketing needs of small startups
-              </p>
-              <ul className="space-y-2 text-left list mb-7">
-                <li className="flex">
-                  <i className="fas fa-chevron-right"></i>
-                  <div>List building and relations</div>
-                </li>
-                <li className="flex">
-                  <i className="fas fa-chevron-right"></i>
-                  <div>Seamless platform integration</div>
-                </li>
-                <li className="flex">
-                  <i className="fas fa-chevron-right"></i>
-                  <div>Great performance on devices</div>
-                </li>
-                <li className="flex">
-                  <i className="fas fa-chevron-right"></i>
-                  <div>Community support and videos</div>
-                </li>
-              </ul>
-              <div className="button-wrapper">
-                <a className="btn-solid-reg page-scroll" href="#download">Subsribe</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className="footer">
-        <div className="container px-4 sm:px-8">
-          <h4 className="mb-8 lg:max-w-3xl lg:mx-auto">
-            Pavo is a mobile application for marketing automation and you can
-            reach the team at
-            <a
-              className="text-indigo-600 hover:text-gray-500"
-              href="mailto:email@domain.com"
-            >email@domain.com</a
-            >
-          </h4>
-          <div className="social-container">
-            <span className="fa-stack">
-              <a href="#your-link">
-                <i className="fas fa-circle fa-stack-2x"></i>
-                <i className="fab fa-facebook-f fa-stack-1x"></i>
-              </a>
-            </span>
-            <span className="fa-stack">
-              <a href="#your-link">
-                <i className="fas fa-circle fa-stack-2x"></i>
-                <i className="fab fa-twitter fa-stack-1x"></i>
-              </a>
-            </span>
-            <span className="fa-stack">
-              <a href="#your-link">
-                <i className="fas fa-circle fa-stack-2x"></i>
-                <i className="fab fa-pinterest-p fa-stack-1x"></i>
-              </a>
-            </span>
-            <span className="fa-stack">
-              <a href="#your-link">
-                <i className="fas fa-circle fa-stack-2x"></i>
-                <i className="fab fa-instagram fa-stack-1x"></i>
-              </a>
-            </span>
-            <span className="fa-stack">
-              <a href="#your-link">
-                <i className="fas fa-circle fa-stack-2x"></i>
-                <i className="fab fa-youtube fa-stack-1x"></i>
-              </a>
-            </span>
-          </div>
-        </div>
-      </div>
+      <Pricing />
+      <Footer />
 
       <div className="copyright">
         <div className="container px-4 sm:px-8 lg:grid lg:grid-cols-3">
