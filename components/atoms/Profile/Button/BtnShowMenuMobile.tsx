@@ -11,7 +11,7 @@ export default function BtnShowMenuMobile(props: Props) {
   return (
     <div className="container mx-auto flex px-4 lg:px-8">
       <button
-        className="text-sm my-2 py-2 px-4 rounded-lg bg-secondary text-white lg:hidden"
+        className="text-sm p-2 bg-regular text-white rounded-r-full lg:hidden"
         onClick={() => setShowMenu(!showMenu)}
       >
         Menu
