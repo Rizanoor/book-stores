@@ -18,7 +18,7 @@ export default function ProfilePicture(props: Props) {
         height={h}
         alt="Profile Picture"
         className={classname}
-        loading="lazy"
+        priority={true}
       />
     </div>
   );

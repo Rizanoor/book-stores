@@ -1,5 +1,5 @@
 import Breadcrumbs from "@/components/molecules/Breadcrumbs";
-import NavbarTest from "@/components/organisms/NavbarTest";
+import NavbarTest from "@/components/organisms/TestNavbar";
 import React from "react";
 
 export default function signup() {

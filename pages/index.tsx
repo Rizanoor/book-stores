@@ -5,7 +5,7 @@ import Header from "@/components/organisms/Header";
 import Pricing from "@/components/organisms/Pricing";
 import Footer from "@/components/organisms/Footer";
 import BookCategory from "@/components/organisms/BookCategory";
-import NavbarTest from "@/components/organisms/NavbarTest";
+import TestNavbar from "@/components/organisms/TestNavbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <>
       {/* <Navbar /> */}
-      <NavbarTest />
+      <TestNavbar />
       <Header />
       <BookCategory />
 

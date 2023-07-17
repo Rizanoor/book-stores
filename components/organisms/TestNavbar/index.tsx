@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 
-export default function NavbarTest() {
+export default function TestNavbar() {
   const [navbar, setNavbar] = useState(false);
 
   const changeNavbar = () => {
