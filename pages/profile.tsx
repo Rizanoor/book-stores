@@ -7,7 +7,6 @@ import Settings from "@/components/organisms/Profile/Settings";
 import Subscription from "@/components/organisms/Profile/Subscription";
 import Transactions from "@/components/organisms/Profile/Transactions";
 import Password from "@/components/organisms/Profile/Password";
-import TestNavbar from "@/components/organisms/TestNavbar";
 import BtnShowMenuMobile from "@/components/atoms/Profile/Button/BtnShowMenuMobile";
 
 export default function profile() {
@@ -16,17 +15,17 @@ export default function profile() {
 
   return (
     <>
-      <TestNavbar />
+      <Navbar />
       <Breadcrumbs>Profile</Breadcrumbs>
       <BtnShowMenuMobile showMenu={showMenu} setShowMenu={setShowMenu} />
-      <div className="container mx-auto flex flex-col lg:flex-row px-4 lg:px-8">
+      <div className="container flex flex-col px-4 mx-auto lg:flex-row lg:px-8">
         <Menu
           showMenu={showMenu}
           setShowMenu={setShowMenu}
           isActiveIndex={isActiveIndex}
           setIsActiveIndex={setIsActiveIndex}
         />
-        <div className="w-full lg:border-l border-gray-300 lg:pl-8 lg:w-3/4">
+        <div className="w-full border-gray-300 lg:border-l lg:pl-8 lg:w-3/4">
           {isActiveIndex === 1 && <Settings />}
           {isActiveIndex === 2 && <Subscription />}
           {isActiveIndex === 3 && <Transactions />}

@@ -1,5 +1,5 @@
 import Breadcrumbs from "@/components/molecules/Breadcrumbs";
-import NavbarTest from "@/components/organisms/TestNavbar";
+import NavbarTest from "@/components/organisms/Navbar";
 import Footer from "@/components/organisms/Footer";
 import React from "react";
 
