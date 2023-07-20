@@ -6,7 +6,6 @@ import BookCategory from "@/components/organisms/BookCategory";
 import Collection from "@/components/organisms/Collection";
 import Pricing from "@/components/organisms/Pricing";
 import Footer from "@/components/organisms/Footer";
-import Copyright from "@/components/organisms/Copyright";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,7 +18,6 @@ export default function Home() {
       <Collection />
       <Pricing />
       <Footer />
-      <Copyright />
     </>
   );
 }
