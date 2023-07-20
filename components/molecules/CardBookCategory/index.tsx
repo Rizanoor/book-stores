@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 export default function index() {
@@ -29,9 +30,9 @@ export default function index() {
           </p>
           <span className="rating-more">
             <img className="rating" src="/svg/star5.svg" alt="Rating" />
-            <a className="more" href="books/book1.html">
+            <Link className="more" href="/details">
               Selengkapnya
-            </a>
+            </Link>
           </span>
         </div>
       </div>

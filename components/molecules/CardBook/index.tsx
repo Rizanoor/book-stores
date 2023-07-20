@@ -1,9 +1,10 @@
+import Link from 'next/link'
 import React from 'react'
 
 export default function index() {
   return (
     <>
-      <div className="card">
+      <Link href="/categories" className="card">
         <div className="card-image">
           <img src="images/logo.png" alt="alternative" />
         </div>
@@ -14,7 +15,7 @@ export default function index() {
             compatibility issues
           </p>
         </div>
-      </div>
+      </Link>
     </>
   )
 }

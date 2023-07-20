@@ -1,5 +1,7 @@
 import Breadcrumbs from "@/components/molecules/Breadcrumbs";
 import NavbarTest from "@/components/organisms/Navbar";
+import CardBookCategory from '@/components/molecules/CardBookCategory'
+
 import React from "react";
 
 export default function categories() {
@@ -7,9 +9,18 @@ export default function categories() {
     <>
       <NavbarTest />
       <Breadcrumbs>Categories</Breadcrumbs>
-      <div className="container mx-auto flex justify-center px-4 lg:px-8">
-        categories
-      </div>
+        <div className="container px-4 sm:px-8">
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+            <CardBookCategory />
+            <CardBookCategory />
+            <CardBookCategory />
+            <CardBookCategory />
+            <CardBookCategory />
+            <CardBookCategory />
+            <CardBookCategory />
+            <CardBookCategory />
+          </div>
+        </div>
     </>
   );
 }
