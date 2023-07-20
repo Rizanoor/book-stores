@@ -1,7 +1,15 @@
-import React from 'react'
+import Breadcrumbs from "@/components/molecules/Breadcrumbs";
+import NavbarTest from "@/components/organisms/TestNavbar";
+import React from "react";
 
 export default function categories() {
   return (
-    <div>categories</div>
-  )
+    <>
+      <NavbarTest />
+      <Breadcrumbs>Categories</Breadcrumbs>
+      <div className="container mx-auto flex justify-center px-4 lg:px-8">
+        categories
+      </div>
+    </>
+  );
 }
