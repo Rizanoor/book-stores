@@ -1,15 +1,21 @@
-import Link from 'next/link'
-import React from 'react'
+import Link from "next/link";
+import React from "react";
 
-export default function index() {
+type Props = {
+  category: string;
+};
+
+export default function index(props: Props) {
+  const { category } = props;
+
   return (
     <>
-      <Link href="/categories" className="card">
+      <Link href={`/categories/${category}`} className="card">
         <div className="card-image">
           <img src="images/logo.png" alt="alternative" />
         </div>
         <div className="card-body">
-          <h5 className="card-title">Comic</h5>
+          <h5 className="card-title">{category}</h5>
           <p className="mb-4">
             You sales force can use the app on any smartphone platform without
             compatibility issues
@@ -17,5 +23,5 @@ export default function index() {
         </div>
       </Link>
     </>
-  )
+  );
 }

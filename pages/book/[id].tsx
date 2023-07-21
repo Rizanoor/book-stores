@@ -22,7 +22,6 @@ const BookDetails = () => {
 
   useEffect(() => {
     const details = dataList.filter((book) => book.id === Number(id));
-    console.log(details);
     setBookDetails(details);
   }, [dataList]);
 
