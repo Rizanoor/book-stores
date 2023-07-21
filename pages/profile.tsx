@@ -18,7 +18,7 @@ export default function profile() {
       <Navbar />
       <Breadcrumbs>Profile</Breadcrumbs>
       <BtnShowMenuMobile showMenu={showMenu} setShowMenu={setShowMenu} />
-      <div className="container flex flex-col px-4 mx-auto lg:flex-row lg:px-8">
+      <div className="container flex flex-col px-4 mx-auto md:px-8 lg:flex-row lg:px-8">
         <Menu
           showMenu={showMenu}
           setShowMenu={setShowMenu}
