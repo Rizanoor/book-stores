@@ -10,7 +10,7 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <title>Pavo Webpage Title</title>
+        <title>VACA</title>
         
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
@@ -26,7 +26,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <link href="../styles/magnific-popup.css" rel="stylesheet" />
         <link href="../styles/styles.css" rel="stylesheet" /> */}
 
-        <link rel="icon" href="/images/favicon.png" />
+        <link rel="icon" href="/images/vaca logo.svg" />
       </Head>
       <Component {...pageProps} />
     </>
