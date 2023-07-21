@@ -4,7 +4,7 @@ import { fetchApi } from "@/components/services";
 import { useState, useEffect } from "react";
 
 export default function index() {
-  const [dataList, setDataList] = useState([]);
+  const [dataList, setDataList] = useState([] as bookDetails[]);
   const [isLoading] = useState(false);
 
   const getData = async () => {
