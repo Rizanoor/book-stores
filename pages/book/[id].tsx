@@ -52,8 +52,7 @@ const BookDetails = () => {
           </>
         ) : (
           <div className="h-52 flex flex-col gap-4 items-center justify-center">
-            <h2>Oops...</h2>
-            <h5>Buku Tidak Ditemukan</h5>
+            <h2>Loading...</h2>
           </div>
         )}
       </div>

@@ -23,13 +23,13 @@ export default function index() {
           className="relative overflow-hidden bg-white shadow-md rounded-xl"
           key={item.id}
         >
-          <a href="/details">
+          <Link href={`/book/${item.id}`}>
             <img
               className="m-auto mt-8 mb-4 overflow-hidden w-36 h-44"
               src={"images" + "/" + item.images}
               alt="picturebook"
             />
-          </a>
+          </Link>
           <div className="px-4 text-left">
             <h5 className="overflow-hidden overflow-ellipsis whitespace-nowrap">
               {item.title}
@@ -40,7 +40,7 @@ export default function index() {
             </p>
             <span className="rating-more">
               <img className="rating" src="/svg/star5.svg" alt="Rating" />
-              <Link className="more" href="/details">
+              <Link className="more" href={`/book/${item.id}`}>
                 Selengkapnya
               </Link>
             </span>
