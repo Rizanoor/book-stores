@@ -24,7 +24,7 @@ export default function Navbar() {
             className="inline-block mr-4 py-0.5 text-xl whitespace-nowrap hover:no-underline focus:no-underline"
             href="/"
           >
-            <img src="images/logo.svg" alt="alternative" className="h-8" />
+            <img src="images/vaca.svg" alt="alternative" className="h-8" />
           </Link>
 
           <button
