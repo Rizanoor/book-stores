@@ -5,7 +5,7 @@ export default function index() {
   return (
     <>
       <div className="relative overflow-hidden bg-white shadow-md rounded-xl">
-        <a href="#">
+        <a href="/details">
           <img
             className="m-auto mt-8 mb-4 overflow-hidden w-36 h-44"
             src="/images/negeriparabedebah.png"
