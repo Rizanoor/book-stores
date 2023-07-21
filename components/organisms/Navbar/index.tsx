@@ -17,18 +17,6 @@ export default function Navbar() {
     window.addEventListener("scroll", changeNavbar);
   }, []);
 
-  // const showMenuMobile = () => {
-  //   let toggle;
-  //   if (toggle === "offcanvas-collapse") {
-  //     toggle = "offcanvas";
-  //     console.log(toggle);
-  //   } else {
-  //     toggle = "offcanvas-collapse";
-  //     console.log(toggle);
-  //   }
-  //   return toggle;
-  // };
-
   return (
     <>
       <nav className={`${navbar && "top-nav-collapse"} navbar fixed-top`}>
@@ -37,7 +25,7 @@ export default function Navbar() {
             className="inline-block mr-4 py-0.5 text-xl whitespace-nowrap hover:no-underline focus:no-underline"
             href="/"
           >
-            <img src="images/vaca.svg" alt="alternative" className="h-8" />
+            <img src=".././images/vaca.svg" alt="alternative" className="h-8" />
           </Link>
 
           <button

@@ -2,7 +2,7 @@ import Link from "next/link";
 import React from "react";
 
 type Props = {
-  children: string;
+  children: string | string[];
 };
 
 export default function Breadcrumbs(props: Props) {
