@@ -44,7 +44,11 @@ const search = () => {
             ref={inputRef}
             className="w-full border border-gray-300 rounded-md p-2"
           />
-          <button type="button" onClick={handleOnClick}>
+          <button
+            type="button"
+            className="btn-solid-sec"
+            onClick={handleOnClick}
+          >
             Cari
           </button>
         </div>
