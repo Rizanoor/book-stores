@@ -13,7 +13,7 @@ export default function index() {
           <div className="xl:text-right">
             <img
               className="inline"
-              src="images/header-smartphone.png"
+              src="images/imagehero.svg"
               alt="alternative"
             />
           </div>
