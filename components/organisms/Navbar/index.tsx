@@ -52,7 +52,7 @@ export default function Navbar() {
                 </Link>
               </li>
               <li>
-                <Link className="nav-link page-scroll" href="/categories">
+                <Link className="nav-link page-scroll" href="#features">
                   Category
                 </Link>
               </li>
