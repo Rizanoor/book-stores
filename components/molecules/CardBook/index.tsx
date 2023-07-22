@@ -3,16 +3,18 @@ import React from "react";
 
 type Props = {
   category: string;
+  images:string;
 };
 
 export default function index(props: Props) {
   const { category } = props;
+  const { images } = props;
 
   return (
     <>
       <Link href={`/categories/${category}`} className="card">
-        <div className="card-image">
-          <img src="images/logo.png" alt="alternative" />
+        <div className="mx-5 mb-4">
+          <img src= {images} alt="alternative" className="rounded-2xl"/>
         </div>
         <div className="card-body">
           <h5 className="card-title">{category}</h5>
