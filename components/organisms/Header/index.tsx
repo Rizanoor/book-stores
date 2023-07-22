@@ -12,7 +12,7 @@ export default function index() {
           <Title />
           <div className="xl:text-right">
             <img
-              className="inline"
+              className="inline w-72 h-64 md:w-[400px] md:h-[360px] lg:w-full"
               src="images/imagehero.svg"
               alt="alternative"
             />

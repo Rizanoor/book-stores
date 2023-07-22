@@ -26,7 +26,7 @@ export default function index() {
           </Link>
         </div>
 
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-1 mx-16 gap-8 md:mx-0 md:grid-cols-2 lg:mx-0 lg:grid-cols-3 xl:mx-0">
           {Object.keys(dataList).length > 0 &&
             dataList.map((item, i) => (
               <div key={i}>

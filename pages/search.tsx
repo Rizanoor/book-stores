@@ -31,20 +31,24 @@ const search = () => {
     setSearchBooksList(result);
   }, [inputSearch]);
 
-  console.log(inputSearch);
 
   return (
     <>
       <Navbar />
       <Breadcrumbs>Search</Breadcrumbs>
       <div className="container px-4 sm:px-8">
-        <div className="flex items-center">
+        <div className="flex items-center gap-2">
           <input
             type="text"
             ref={inputRef}
             className="w-full border border-gray-300 rounded-md p-2"
+            placeholder="Cari bukumu disini..."
           />
-          <button type="button" onClick={handleOnClick}>
+          <button
+            type="button"
+            className="btn-solid-sec"
+            onClick={handleOnClick}
+          >
             Cari
           </button>
         </div>

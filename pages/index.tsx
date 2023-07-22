@@ -7,7 +7,7 @@ import Collection from "@/components/organisms/Collection";
 import Pricing from "@/components/organisms/Pricing";
 import Footer from "@/components/organisms/Footer";
 
-const inter = Inter({ subsets: ["latin"] });
+// const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (

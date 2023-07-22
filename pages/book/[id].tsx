@@ -4,6 +4,7 @@ import Footer from "@/components/organisms/Footer";
 import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 import { fetchApi } from "@/components/services";
+import Link from "next/link";
 
 const BookDetails = () => {
   const [dataList, setDataList] = useState([] as bookDetails[]);
@@ -31,7 +32,7 @@ const BookDetails = () => {
       <Breadcrumbs>
         Buku / {Object.keys(bookDetails).length > 0 ? bookDetails[0].title : ""}
       </Breadcrumbs>
-      <div className="container px-4 md:px-8">
+      <div className="container px-4 md:px-8 py-8">
         {Object.keys(bookDetails).length > 0 ? (
           <>
             <div className="flex items-start">
@@ -47,6 +48,11 @@ const BookDetails = () => {
                 <h5>Deskripsi Buku</h5>
                 <p>{bookDetails[0].deskripsi}</p>
               </div>
+            </div>
+            <div className="text-center mt-24">
+              <Link className="btn-solid-lg" href="#">
+                Baca Buku
+              </Link>
             </div>
           </>
         ) : (

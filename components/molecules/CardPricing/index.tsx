@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 export default function index(props: PricingList) {
@@ -25,9 +26,9 @@ export default function index(props: PricingList) {
             ))}
           </ul>
           <div className="button-wrapper">
-            <a className="btn-solid-reg page-scroll" href="#beli">
+            <Link className="btn-solid-reg page-scroll" href="/payment">
               Beli sekarang
-            </a>
+            </Link>
           </div>
         </div>
       </div>

@@ -11,7 +11,7 @@ const payment = () => {
     <>
       <Navbar />
       <Breadcrumbs>Pembayaran</Breadcrumbs>
-      <div className=" container px-4 md:px-8 mx-auto grid lg:grid-cols-3 md:grid-cols-2 gap-8">
+      <div className=" container px-4 md:px-8 mx-auto grid lg:grid-cols-3 md:grid-cols-2 gap-8 lg:pt-8">
         <div className="lg:col-span-2">
           <span className="text-md text-black font-bold">
             Metode Pembayaran
