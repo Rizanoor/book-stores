@@ -1,41 +1,36 @@
-import React from 'react'
+import React from "react";
 
-export default function index() {
+export default function index(props: PricingList) {
+  const { id, title, price, description, details } = props;
   return (
-      <>
-        <div className="card">
-            <div className="card-body">
-              <div className="card-title">STANDARD</div>
-              <div className="price">
-                <span className="currency">Rp</span><span className="value">2.000</span>
-              </div>
-              <div className="frequency">monthly</div>
-              <p>
-                This basic package covers the marketing needs of small startups
-              </p>
-              <ul className="space-y-2 text-left list mb-7">
-                <li className="flex">
-                  <i className="fas fa-chevron-right"></i>
-                  <div>List building and relations</div>
-                </li>
-                <li className="flex">
-                  <i className="fas fa-chevron-right"></i>
-                  <div>Seamless platform integration</div>
-                </li>
-                <li className="flex">
-                  <i className="fas fa-chevron-right"></i>
-                  <div>Great performance on devices</div>
-                </li>
-                <li className="flex">
-                  <i className="fas fa-chevron-right"></i>
-                  <div>Community support and videos</div>
-                </li>
-              </ul>
-              <div className="button-wrapper">
-                <a className="btn-solid-reg page-scroll" href="#download">Subsribe</a>
-              </div>
-            </div>
+    <>
+      <div className="card">
+        <div className="card-body">
+          <div className="card-title">{title}</div>
+          <div className="flex justify-center items-center">
+            <span className="currency">Rp</span>
+            <span className="value">{price}</span>
           </div>
-      </>
-  )
+          <div className="frequency">/bulan</div>
+          <p>{description}</p>
+          <ul className="space-y-2 text-left list">
+            {details.map((item, i) => (
+              <li key={i} className="flex flex-col h-full justify-between">
+                <div className="flex">
+                  <i className="fas fa-chevron-right"></i>
+                  <div>{item}</div>
+                </div>
+                <div></div>
+              </li>
+            ))}
+          </ul>
+          <div className="button-wrapper">
+            <a className="btn-solid-reg page-scroll" href="#beli">
+              Beli sekarang
+            </a>
+          </div>
+        </div>
+      </div>
+    </>
+  );
 }
