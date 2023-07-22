@@ -31,7 +31,6 @@ const search = () => {
     setSearchBooksList(result);
   }, [inputSearch]);
 
-  console.log(inputSearch);
 
   return (
     <>
