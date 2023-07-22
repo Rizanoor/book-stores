@@ -1,4 +1,5 @@
-import React from 'react'
+import Link from "next/link";
+import React from "react";
 
 export default function title() {
   return (
@@ -9,10 +10,10 @@ export default function title() {
           Start getting things done together with your team based on Pavo's
           revolutionary team management features
         </p>
-        <a className="btn-solid-lg" href="#your-link">
+        <Link className="btn-solid-lg" href="/search">
           Cari buku
-        </a>
+        </Link>
       </div>
     </>
-  )
+  );
 }
