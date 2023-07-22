@@ -4,7 +4,6 @@ import pricingList from "@/components/services/pricing";
 
 export default function index() {
   const pricing = pricingList;
-  console.log(pricing);
 
   return (
     <>

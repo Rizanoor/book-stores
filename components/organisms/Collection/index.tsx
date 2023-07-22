@@ -8,7 +8,8 @@ export default function index() {
 
   const getData = async () => {
     const data = await fetchApi();
-    setDataList(data);
+    const selectedData = data.slice(0, 6);
+    setDataList(selectedData);
   };
 
   useEffect(() => {
