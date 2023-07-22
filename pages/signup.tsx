@@ -8,7 +8,7 @@ export default function Signup() {
     <>
       <Navbar />
       <Breadcrumbs>Sign up</Breadcrumbs>
-      <div className="container flex mt-32">
+      <div className="container flex mt-12">
         <main className="w-full px-8 m-0 md:w-1/2">
           <div>
             <h1 className="mb-8 text-3xl">Buat Akun</h1>
@@ -29,7 +29,7 @@ export default function Signup() {
             <p className="mb-8 text-center">Sudah punya akun? <span><Link href="/signin" className="font-semibold text-blue-600">Masuk</Link></span></p>
           </div>
         </main>
-        <img src="/images/signup-hero.png" alt="signin-hero" className="hidden w-1/2 h-screen md:block" />
+        <img src="/images/signup-hero.png" alt="signin-hero" className="hidden w-1/3 h-96 m-auto md:block" />
       </div>
     </>
   );
