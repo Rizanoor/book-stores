@@ -6,7 +6,7 @@ export default function Transactions() {
 
   return (
     <>
-      <h1 className="text-center mb-16">Paket Langganan Pengguna</h1>
+      <h1 className="text-center mb-16">Riwayat Transaksi Pengguna</h1>
       <div className="grid grid-cols-4">
         <SubMenuNav
           isActive={isActiveIndex === 1}
